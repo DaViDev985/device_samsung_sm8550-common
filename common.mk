@@ -202,7 +202,7 @@ PRODUCT_PACKAGES += \
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service.samsung-qcom \
+    vendor.lineage.livedisplay-service.samsung-qcom \
     vendor.lineage.touch-service.samsung
 
 # Keymint
@@ -274,7 +274,6 @@ PRODUCT_PACKAGES += \
     SettingsResCommon \
     SettingsResSamsung \
     SystemUIResCommon \
-    TelephonyResCommon \
     WifiResCommon \
     WifiResTarget \
     WifiResTarget_spf
@@ -282,7 +281,8 @@ PRODUCT_PACKAGES += \
 ifneq ($(TARGET_IS_WIFI-ONLY),true)
 PRODUCT_PACKAGES += \
     CarrierConfigResCommon \
-    TelephonyResCommon
+    TelephonyResCommon \
+    TelephonyRRO
 endif
 
 # Partitions
